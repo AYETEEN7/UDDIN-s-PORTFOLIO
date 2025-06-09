@@ -371,3 +371,48 @@ span{
     align-items: flex-start;
   }
 }
+.home-img img {
+    width: 200px; /* Increase the size for mobile */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #00f0ff; /* Glowing effect */
+    margin: 0 auto; /* Center horizontally */
+    display: block;
+}
+@media (max-width: 768px) {
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header nav {
+        display: none; /* Hide the full menu on mobile */
+    }
+
+    .menu-icon { 
+        display: block; /* Show hamburger menu */
+        font-size: 2rem;
+        color: #00f0ff;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .home-img img {
+        width: 200px;
+        height: 200px;
+    }
+}
+.home-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.home-content h1 span {
+    color: #00f0ff; /* Highlighted name */
+}
