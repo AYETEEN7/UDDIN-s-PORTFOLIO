@@ -466,4 +466,40 @@ span{
         text-align: center;
     }
 }
+/* Mobile adjustments */
+@media (max-width: 768px) {
+
+    /* Center the logo */
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 24px; /* Adjust if needed */
+    }
+
+    /* Center the profile image */
+    .home-img img {
+        display: block;
+        margin: 20px auto 0 auto; /* Center horizontally */
+        width: 200px;  /* Adjust size if needed */
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0 40px #00f0ff; /* Glowing effect */
+    }
+
+    /* Optional: Center all home content */
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
 
