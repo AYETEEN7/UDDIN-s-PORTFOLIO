@@ -416,3 +416,20 @@ span{
 .home-content h1 span {
     color: #00f0ff; /* Highlighted name */
 }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: #00f0ff;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
