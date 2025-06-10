@@ -538,4 +538,13 @@ span{
         text-align: center;
     }
 }
+/* Default state */
+.logo {
+    transition: opacity 0.5s ease;
+}
+
+/* When scrolled */
+.logo.fade {
+    opacity: 0;
+}
 
