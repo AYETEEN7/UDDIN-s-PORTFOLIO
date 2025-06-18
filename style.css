@@ -317,4 +317,47 @@ form button.btn:hover {
   box-shadow: 0 0 25px cyan, 0 0 50px cyan;
   transition: box-shadow 0.3s ease-in-out;
 }
+.timeline-item-clean {
+  position: relative;
+  margin: 50px 0;
+  opacity: 0;
+  transition: all 0.7s ease-out;
+}
+
+.timeline-item-clean.left .timeline-box {
+  transform: translateX(-100px);
+  margin-left: 30px;
+}
+
+.timeline-item-clean.right .timeline-box {
+  transform: translateX(100px);
+  margin-left: 30px;
+}
+
+.timeline-item-clean.show {
+  opacity: 1;
+}
+
+.timeline-item-clean.show.left .timeline-box {
+  transform: translateX(0);
+}
+
+.timeline-item-clean.show.right .timeline-box {
+  transform: translateX(0);
+}
+
+/* Adjust dot alignment */
+.timeline-item-clean.left .timeline-dot,
+.timeline-item-clean.right .timeline-dot {
+  left: -12px;
+}
+
+/* Responsive fix */
+@media (max-width: 768px) {
+  .timeline-item-clean.left .timeline-box,
+  .timeline-item-clean.right .timeline-box {
+    transform: translateX(0);
+    margin-left: 0;
+  }
+}
 
