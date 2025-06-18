@@ -292,4 +292,14 @@ form button.btn:hover {
     left: -10px;
   }
 }
+.timeline-clean {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 40px;
+  border-left: 4px solid cyan;
+  max-width: 800px;
+}
+.timeline-item-clean { /* ... */ }
+.timeline-dot { /* ... */ }
+.timeline-box { /* ... */ }
 
