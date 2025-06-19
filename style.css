@@ -94,11 +94,11 @@ img {
   font-weight: bold;
   border-radius: 5px;
 }
-.home-img img {
-  width: 250px;
-  border-radius: 50%;
-  border: 4px solid cyan;
-  box-shadow: 0 0 20px cyan;
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 /* Timeline Shared Styles */
