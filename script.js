@@ -39,3 +39,11 @@ const observer = new IntersectionObserver(entries => {
 });
 
 timelineItems.forEach(item => observer.observe(item));
+// Toggle mobile menu
+const menuIcon = document.getElementById('menu-icon');
+const navbar = document.querySelector('.navbar');
+
+menuIcon.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+});
+
