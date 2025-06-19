@@ -411,3 +411,20 @@ body {
   background-size: cover;
   color: white;
 }
+.home {
+  background: url('images/football.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+  padding: 100px 10%;
+  color: white;
+}
+
+.home::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay for text readability */
+  z-index: -1;
+}
